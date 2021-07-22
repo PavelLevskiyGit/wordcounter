@@ -3,10 +3,11 @@ import "./ShowCounter.js";
 import './App.css';
 
 
-function App() {
+function App() {pp
   return (
     <div className="App">
       <Input/>
+      <ShowCounter/>
     </div>
   );
 }
