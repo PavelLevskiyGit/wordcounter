@@ -4,9 +4,19 @@ import "./showcounter.css";
 
 const fs = require("fs");
 
+
 function ShowCounter () {
+
+fs.readFile('base.json', 'utf-8', (err, data) => {
+    if (err) {
+        throw err;
+    }
+    const base = JSON.parse(data.toString());
+});
+
   return(
     <div>
+      {base}
     </div>
   );
 }

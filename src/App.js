@@ -1,4 +1,5 @@
 import Input from "./Input"
+import "./ShowCounter.js";
 import './App.css';
 
 
