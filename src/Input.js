@@ -1,14 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import ReactDom from "react-dom";
 import "./Input.css";
+import writeBase from "./writebase.js";
 
 function Input(){
+  const [data, setData] = useState('');
   return(
     <div className = "inputDiv">
-      <input value = "write some words"/>
-      <input value = "write transcription"/>
-      <input value = "write translate"/>
-      <button>add</button>
+      <input onChange = {e => setData(e.target.value)} placeholder = "write some words"/>
+      <input placeholder = "write transcription"/>
+      <input placeholder = "write translate"/>
+      <button onClick = { data => writeBase(data) } >add</button>
     </div>
   );
 };

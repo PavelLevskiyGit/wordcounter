@@ -12,7 +12,7 @@ const state = [
 
   return(
     <div>
-      {base?base.test:state}
+      {base?base.test.[0].word:state}
     </div>
   );
 }
