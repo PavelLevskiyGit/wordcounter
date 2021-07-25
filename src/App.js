@@ -1,9 +1,9 @@
 import Input from "./Input"
-import "./ShowCounter.js";
+import ShowCounter from "./ShowCounter.js";
 import './App.css';
 
 
-function App() {pp
+function App() {
   return (
     <div className="App">
       <Input/>

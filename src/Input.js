@@ -8,7 +8,7 @@ function Input(){
       <input value = "write some words"/>
       <input value = "write transcription"/>
       <input value = "write translate"/>
-      <button onClick = {alert("hello")}>add</button>
+      <button>add</button>
     </div>
   );
 };
