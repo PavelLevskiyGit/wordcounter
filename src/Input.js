@@ -12,10 +12,7 @@ function Input(){
     ${data[2].transcription == undefined ? "transcription is empty" : data[2].transcription}`);
     
   console.log("data", data);
-  console.log("data 0", data[0].word);
-  console.log("data 1", data[1].translate);
-  console.log("data 2", data[2].transcription);
-  
+    
   return(
     <div className = "inputDiv">
       <input onChange = {e => setData([{"word" : e.target.value},{},{}])} placeholder = "write some words"/>
