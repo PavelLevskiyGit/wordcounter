@@ -8,7 +8,7 @@ function Input(){
   
   const conf = data => window.confirm(`all good? 
     ${data[0].word == undefined ? "word is empty" : data[0].word} 
-    ${data[1].translate == undefined ? "translation is empty" : data[1].translation} 
+    ${data[1].translate == undefined ? "translation is empty" : data[1].translate} 
     ${data[2].transcription == undefined ? "transcription is empty" : data[2].transcription}`);
     
   console.log("data", data);
