@@ -1,4 +1,4 @@
-const fs = require('fs');
+const fs = require('browserify-fs');
 const base = require('./base')
 
 const writeData = data => [...base, data];

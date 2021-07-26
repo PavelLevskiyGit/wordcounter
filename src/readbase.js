@@ -5,7 +5,6 @@ fs.readFile('base.json', 'utf-8', (err, data) => {
         throw err;
     }
     base = JSON.parse(data.toString());
-   
 });
 
 export default base;
