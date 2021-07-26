@@ -6,13 +6,9 @@ import base from "./base";
 
 function ShowCounter() {
 
-const state = [
-  "hi",
-];
-
   return(
     <div>
-      {base?base.[0][0].word:state}
+      {base?base.[0][0].word:"no connect to base"}
     </div>
   );
 }
