@@ -9,7 +9,7 @@ function Input(){
   console.log(data);
   return(
     <div className = "inputDiv">
-      <input onChange = {e => console.log(setData([...data][0] = e.target.value)} placeholder = "write some words"/>
+      <input onChange = {e => setData([...data][0] = e.target.value)} placeholder = "write some words"/>
       <input onChange = {e => setData([...data][1] = e.target.value)} placeholder = "write transcription"/>
       <input onChange = {e => setData([...data][2] = e.target.value)} placeholder = "write translate"/>
       <button onClick = { data => {
