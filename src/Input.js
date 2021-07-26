@@ -12,9 +12,9 @@ function Input(){
     ${[...data][2].transcription == undefined ? "transcription is empty" : [...data][2].transcription}`);
     
   console.log("data", data);
-  console.log("data 0", data[0]);
-  console.log("data 1", data[1]);
-  console.log("data 2", data[2]);
+  console.log("data 0", data[0].word);
+  console.log("data 1", data[1].translation);
+  console.log("data 2", data[2].transcription);
   
   return(
     <div className = "inputDiv">
