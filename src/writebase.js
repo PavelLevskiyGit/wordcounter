@@ -1,7 +1,7 @@
 const fs = require('fs');
 
 
-const writeData = data => alert(data);
+const writeData = data => alert(data[0][0].word);
 
 /* fs.writeFile(base.json, data, 'utf-8', err => {
   if (err) throw err;
