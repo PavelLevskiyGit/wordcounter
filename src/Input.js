@@ -11,7 +11,7 @@ function Input(){
   return(
     <div className = "inputDiv">
       <input onChange = {e => setData([...data][0] = {"word" : e.target.value})} placeholder = "write some words"/>
-      <input onChange = {e => setData([...data][1] = {"translate" : e.target.value}} placeholder = "write transcription"/>
+      <input onChange = {e => setData([...data][1] = {"translate" : e.target.value})} placeholder = "write transcription"/>
       <input onChange = {e => setData([...data][2] = {"transcription" : e.target.value})} placeholder = "write translate"/>
       <button onClick = { data => {
         conf(data) ? writeBase(data) && setData([]) : alert("correct please") } 
