@@ -4,7 +4,7 @@ import "./Input.css";
 import writeBase from "./writebase.js";
 
 function Input(){
-  const [data, setData] = useState('');
+  const [data, setData] = useState([]);
   return(
     <div className = "inputDiv">
       <input onChange = {e => setData(e.target.value)} placeholder = "write some words"/>
