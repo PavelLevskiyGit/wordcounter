@@ -4,7 +4,7 @@ import "./Input.css";
 import writeBase from "./writebase.js";
 
 function Input(){
-  const [data, setData] = useState([]);
+  const [data, setData] = useState([{},{},{}]);
   const conf = data => window.confirm(`all good? ${data[0] == undefined ? "word is empty" : data[0]} 
     ${data[1] == undefined ? "translation is empty" : data[1]} ${data[2] == undefined ? "transcription is empty" : data[2]}`);
   console.log("data", data);
